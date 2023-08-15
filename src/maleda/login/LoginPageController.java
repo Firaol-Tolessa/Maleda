@@ -49,7 +49,7 @@ public class LoginPageController implements Initializable {
             String q = "SELECT * FROM admin WHERE " + column + " = '" + input + "'";
             
             getData(q);
-
+            System.out.println("helloworld");
             if (rs.next()) {
                 String storedPassword = rs.getString("password");
                 String role = rs.getString("role");
