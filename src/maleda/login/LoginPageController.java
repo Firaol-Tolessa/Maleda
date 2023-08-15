@@ -49,7 +49,7 @@ public class LoginPageController implements Initializable {
             String q = "SELECT * FROM admin WHERE " + column + " = '" + input + "'";
             
             getData(q);
-            System.out.println("helloworld");
+           
             if (rs.next()) {
                 String storedPassword = rs.getString("password");
                 String role = rs.getString("role");
@@ -77,7 +77,7 @@ public class LoginPageController implements Initializable {
                 } else {
                     System.out.println("Incorrect password!");
                     AlertDefn.methodERROR("The password or username is WRONG!!");
-                    root = FXMLLoader.load(getClass().getResource("../login/MaledaLoginPage.fxml"));
+                    root = FXMLLoader.load(getClass().getResource("../login/LoginPage.fxml"));
                     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     scene = new Scene(root);
                     stage.setScene(scene);
@@ -87,7 +87,7 @@ public class LoginPageController implements Initializable {
             } else {
                 System.out.println("Username or empid not found!");
                 AlertDefn.methodERROR("The password or username is WRONG!!");
-                root = FXMLLoader.load(getClass().getResource("../login/MaledaLoginPage.fxml"));
+                root = FXMLLoader.load(getClass().getResource("../login/LoginPage.fxml"));
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
