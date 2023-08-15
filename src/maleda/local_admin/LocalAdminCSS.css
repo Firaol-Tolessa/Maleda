@@ -1,0 +1,99 @@
+.background {
+    -fx-background-image: url("../maleda_images/AdminBackground.png");
+}
+
+.label{
+
+    -fx-font-size:30;
+    -fx-alignment: center;
+    -fx-background-color: yellowgreen;
+    -fx-text-fill: #f0f0f0;
+
+}
+
+.Textfield,#firstname,#lastname,#middlename,#empid,#password,#adminname{
+
+    -fx-font-size:18;
+    -fx-font-weight: bolder;
+    -fx-alignment: center;
+    -fx-background-color: #72e9e9;
+    -fx-font-family: Cambria;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 6;
+
+}
+
+.button{
+
+    -fx-font-size:20;
+    -fx-font-family: Cambria;
+    -fx-alignment: center;
+    -fx-font-weight: 900;
+    -fx-background-color: #72e9e9;
+    -fx-text-fill: #000000;
+    -fx-border-color: #0066cc;
+    -fx-background-radius: 10;
+
+
+}
+#logoutbn{
+
+    -fx-background-color: #eaa31e;
+    -fx-text-fill: #333333;
+    -fx-background-radius: 50;
+    -fx-font-family: Cambria;
+    -fx-font-weight: 900;
+    -fx-border-color: none;
+}
+#login{
+
+    -fx-background-color: #eaa31e;
+    -fx-text-fill: #333333;
+    -fx-background-radius: 15;
+    -fx-font-family: Cambria;
+    -fx-font-weight: 900;
+    -fx-border-color: none;
+}
+#register{
+
+    -fx-background-color: #ec944d;
+    -fx-text-fill: #333333;
+    -fx-background-radius: 20;
+    -fx-font-family: Cambria;
+    -fx-font-weight: 900;
+    -fx-border-color: none;
+}
+
+
+.button,#login:pressed{
+
+    -fx-background-color: linear-gradient(to bottom, #b5b5b5, #dedede);
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0, 0.6), 5,0,0,1);
+}
+
+
+
+#logout:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+#register:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.button:hover {
+    -fx-background-color: #266967; 
+    -fx-text-fill: white;
+}
+
+#register,#login:hover {
+    -fx-background-color: #704f1f; 
+    -fx-text-fill: white;
+}
+
+.vbox_background_center{
+    -fx-background-image: url("maleda_images/MaledaReg.png");
+}
